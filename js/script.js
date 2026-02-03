@@ -1,38 +1,21 @@
-// Scroll suave para links internos do tipo #secao
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener("click", (e) => {
-    const id = link.getAttribute("href");
-    const target = document.querySelector(id);
-    if (!target) return;
-
-    e.preventDefault();
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
+// Scroll suave + tracking simples
+document.querySelectorAll("[data-scroll]").forEach(el => {
+  el.addEventListener("click", () => {
+    console.log("cta_click");
+    document.querySelector(el.dataset.scroll)
+      .scrollIntoView({ behavior: "smooth" });
   });
 });
 
-// FAQ Accordion
-const faqButtons = document.querySelectorAll(".faq-question");
-
-faqButtons.forEach((btn) => {
+// FAQ accordion
+document.querySelectorAll(".faq-question").forEach(btn => {
   btn.addEventListener("click", () => {
-    const item = btn.closest(".faq-item");
-    const answer = item.querySelector(".faq-answer");
-    const isOpen = btn.getAttribute("aria-expanded") === "true";
+    const answer = btn.nextElementSibling;
+    const open = answer.style.display === "block";
 
-    // Fecha todos antes de abrir o clicado (opcional, mas deixa limpo)
-    document.querySelectorAll(".faq-item").forEach((otherItem) => {
-      const otherBtn = otherItem.querySelector(".faq-question");
-      const otherAnswer = otherItem.querySelector(".faq-answer");
-      otherBtn.setAttribute("aria-expanded", "false");
-      otherAnswer.hidden = true;
-      otherItem.classList.remove("open");
-    });
+    document.querySelectorAll(".faq-answer")
+      .forEach(a => a.style.display = "none");
 
-    // Se estava fechado, abre
-    if (!isOpen) {
-      btn.setAttribute("aria-expanded", "true");
-      answer.hidden = false;
-      item.classList.add("open");
-    }
+    answer.style.display = open ? "none" : "block";
   });
 });

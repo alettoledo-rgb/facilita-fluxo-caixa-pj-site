@@ -1,0 +1,168 @@
+:root {
+  --bg: #0b0b0b;
+  --panel: #121212;
+  --text: #ffffff;
+  --muted: #b3b3b3;
+  --line: #1f1f1f;
+
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.video-wrapper {
+  background: #000;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--line);
+}
+
+.cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+.cta.primary {
+  background: #ffffff;
+  color: #000000;
+}
+
+.cta.secondary {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid var(--line);
+}
+
+.cta:hover {
+  transform: translateY(-1px);
+  opacity: .95;
+}
+
+.microcopy {
+  display: block;
+  margin-top: .75rem;
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+section {
+  border-bottom: 1px solid var(--line);
+}
+
+.tension p {
+  font-size: 1.4rem;
+  margin-bottom: .75rem;
+}
+
+.highlight {
+  font-weight: 600;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--panel);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+
+.offer-box {
+  background: var(--panel);
+  border-radius: var(--radius);
+  text-align: center;
+  border: 1px solid var(--line);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--text);
+  padding: 1rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-answer {
+  display: none;
+  color: var(--muted);
+  padding-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+.sticky-cta {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sticky-cta {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: #000;
+    border-top: 1px solid var(--line);
+  }
+
+  .sticky-cta .cta {
+    width: 100%;
+    text-align: center;
+  }
+}

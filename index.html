@@ -1,334 +1,197 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Facilita Fluxo de Caixa</title>
 
-  <meta
-    name="description"
-    content="Tenha clareza real do fluxo de caixa em minutos. Diagnóstico simples, sem planilhas complexas e sem precisar entender contabilidade."
-  />
+  <meta name="description" content="Saiba em minutos se o caixa do seu negócio está saudável ou em risco. Clareza imediata, sem planilhas complicadas." />
 
+  <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1412141350446035');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1412141350446035&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
-  <!-- Header simples, sem “faixa azul” -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <span class="brand-title">Facilita Fluxo de Caixa</span>
-        <span class="brand-sub">Simples, rápido e resumido</span>
+
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <div class="container">
+
+      <h1>Saiba em minutos se o caixa do seu negócio está saudável ou em risco</h1>
+
+      <p class="subtitle">
+        Clareza imediata para MEIs e microempresários decidirem com segurança,
+        sem planilhas complicadas.
+      </p>
+
+      <!-- VSL -->
+      <div class="video-wrapper">
+        <vturb-smartplayer
+          id="vid-698266a69a64dd1a27bd3829"
+          style="display:block;margin:0 auto;width:100%;">
+        </vturb-smartplayer>
       </div>
 
-      <a class="btn btn-outline" href="#oferta" data-scroll>
-        Comprar agora
+      <!-- CTA -->
+      <button class="cta primary" data-scroll="#oferta">
+        Quero entender meu caixa agora
+      </button>
+
+      <span class="microcopy">
+        Acesso imediato • Pagamento seguro
+      </span>
+
+    </div>
+  </section>
+
+  <!-- BLOCO DE TENSÃO -->
+  <section class="tension">
+    <div class="container">
+      <p>O dinheiro entra.</p>
+      <p>Mas você nunca sabe se vai dar até o fim do mês.</p>
+      <p class="highlight">Isso não é normal. É falta de clareza.</p>
+    </div>
+  </section>
+
+  <!-- MECANISMO -->
+  <section class="mechanism">
+    <div class="container">
+      <h2>Como funciona na prática</h2>
+      <p class="mechanism-sub">Leitura prática de caixa</p>
+
+      <div class="cards">
+        <div class="card">Poucos dados</div>
+        <div class="card">Resultado imediato: saudável, atenção ou risco</div>
+        <div class="card">Sem precisar entender finanças</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VOCÊ RECEBE -->
+  <section class="deliverables">
+    <div class="container">
+      <h2>O que você recebe</h2>
+
+      <div class="cards">
+        <div class="card">Ferramenta digital Facilita Fluxo de Caixa</div>
+        <div class="card">Leitura clara do caixa em minutos</div>
+        <div class="card">Aula prática de gestão de caixa</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REDUÇÃO DE ESFORÇO -->
+  <section class="effort">
+    <div class="container">
+      <p>Você não precisa ser bom com números.</p>
+      <p>Não precisa alimentar todo dia.</p>
+      <p>Não substitui seu contador.</p>
+      <p class="highlight">É clareza para decidir melhor.</p>
+    </div>
+  </section>
+
+  <!-- OFERTA -->
+  <section class="offer" id="oferta">
+    <div class="container offer-box">
+      <h2>Acesso completo por R$ 97</h2>
+      <p>Ferramenta + aula prática</p>
+      <p>Acesso imediato após confirmação</p>
+
+      <a
+        class="cta primary"
+        href="https://pay.hotmart.com/T104122762T"
+        target="_blank"
+        rel="noopener"
+      >
+        Quero acesso imediato
       </a>
+
+      <span class="microcopy">
+        Compra segura • Sem mensalidade
+      </span>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <!-- HERO: VSL no topo + CTA -->
-    <section class="hero" id="topo">
-      <div class="container hero-grid">
-
-        <div class="hero-copy">
-          <h1>Tenha clareza real do fluxo de caixa em minutos.</h1>
-          <p class="subheadline">
-            Descubra se o seu negócio está saudável, em atenção ou em risco perdendo dinheiro,
-            sem planilhas complexas e sem precisar entender contabilidade.
-          </p>
-
-          <div class="hero-badges" aria-label="Benefícios rápidos">
-            <span class="badge">Diagnóstico em minutos</span>
-            <span class="badge">Leitura simples</span>
-            <span class="badge">Acesso imediato</span>
-          </div>
-        </div>
-
-        <div class="hero-vsl" aria-label="Vídeo principal">
-          <div class="vsl-frame">
-            <!-- VSL embed, não alterar a estrutura do player -->
-            <vturb-smartplayer
-              id="vid-697fe7116300fb8f8ee0e813"
-              style="display: block; margin: 0 auto; width: 100%;"
-            ></vturb-smartplayer>
-
-            <script type="text/javascript">
-              var s = document.createElement("script");
-              s.src = "https://scripts.converteai.net/7a2f2c75-9a37-4ad8-b060-7171f7f0bf22/players/697fe7116300fb8f8ee0e813/v4/player.js";
-              s.async = !0;
-              document.head.appendChild(s);
-            </script>
-          </div>
-
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#oferta" data-scroll>
-              Quero clareza no meu fluxo de caixa
-            </a>
-            <p class="micro">
-              Você será direcionado para o checkout seguro da Hotmart.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PROBLEMA -->
-    <section class="section section-alt" id="problema">
-      <div class="container narrow">
-        <h2>Você vende, trabalha, paga contas…</h2>
-        <p class="lead">Mas não consegue responder com segurança:</p>
-
-        <ul class="bullets">
-          <li>Onde exatamente o dinheiro está sendo consumido?</li>
-          <li>Posso investir ou preciso segurar gastos?</li>
-        </ul>
-
-        <p class="closing">
-          Sem essa clareza, qualquer decisão vira aposta.
-        </p>
-      </div>
-    </section>
-
-    <!-- SOLUÇÃO -->
-    <section class="section" id="solucao">
-      <div class="container narrow">
-        <h2>O que é o Facilita Fluxo de Caixa</h2>
-        <p class="lead">
-          O Facilita Fluxo de Caixa é um diagnóstico financeiro simples e objetivo que transforma dados básicos
-          em uma visão clara da situação do caixa.
-        </p>
-
-        <div class="states" role="list">
-          <div class="state-card" role="listitem">
-            <span class="state-dot dot-ok" aria-hidden="true"></span>
-            <div>
-              <strong>Caixa saudável</strong>
-              <p>Você tem folga e controle, com maior previsibilidade.</p>
-            </div>
-          </div>
-
-          <div class="state-card" role="listitem">
-            <span class="state-dot dot-warn" aria-hidden="true"></span>
-            <div>
-              <strong>Caixa em atenção</strong>
-              <p>Você está no limite, decisões exigem cautela e ajustes.</p>
-            </div>
-          </div>
-
-          <div class="state-card" role="listitem">
-            <span class="state-dot dot-risk" aria-hidden="true"></span>
-            <div>
-              <strong>Caixa em risco</strong>
-              <p>Saídas pressionam a operação, é hora de agir com prioridade.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BÔNUS -->
-    <section class="section section-alt" id="bonus">
-      <div class="container narrow">
-        <h2>Bônus exclusivo, Aula de 1 hora sobre Gestão de Fluxo de Caixa</h2>
-
-        <p class="lead">
-          Ao adquirir o Facilita Fluxo de Caixa, você recebe uma aula objetiva com Alexandre Toledo
-          sobre como interpretar e decidir melhor com base no caixa do negócio.
-        </p>
-
-        <ul class="bullets">
-          <li>Ciclo operacional do caixa</li>
-          <li>Ciclo financeiro do caixa</li>
-          <li>Necessidade de capital de giro</li>
-          <li>Em quanto tempo a receita se transforma em caixa</li>
-          <li>Como evitar decisões no escuro ao investir ou retirar pró-labore</li>
-        </ul>
-
-        <div class="mini-cv">
-          <p>
-            <strong>Mini currículo</strong><br />
-            Alexandre Toledo é executivo com mais de 25 anos de experiência em finanças, auditoria e controles,
-            com atuação em grandes empresas globais e instituições financeiras, focado em clareza de decisão financeira
-            aplicada a pequenos negócios.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROVA DE CONTEXTO: SEBRAE -->
-    <section class="section" id="sebrae">
-      <div class="container narrow">
-        <div class="context-box">
-          <div class="context-copy">
-            <h2>Contexto que reforça a importância</h2>
-            <p class="lead">
-              Segundo o Sebrae, quase metade das micro e pequenas empresas fecha por problemas relacionados
-              ao descontrole do fluxo de caixa.
-            </p>
-            <p class="micro">
-              Este bloco é apenas um reforço de contexto, o foco é você tomar uma decisão com clareza.
-            </p>
-          </div>
-
-          <div class="context-media">
-            <img
-              src="assets/images/sebrae.png"
-              alt="Recorte de pesquisa citando o Sebrae sobre descontrole do fluxo de caixa"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- O QUE VOCÊ RECEBE -->
-    <section class="section section-alt" id="recebe">
-      <div class="container narrow">
-        <h2>O que você recebe</h2>
-
-        <ul class="bullets">
-          <li>Diagnóstico resumido da situação do caixa</li>
-          <li>Classificação objetiva, saudável, atenção, risco</li>
-          <li>Orientações práticas para próximos passos</li>
-        </ul>
-
-        <div class="perks" aria-label="Complementos">
-          <div class="perk">
-            <span class="perk-ico" aria-hidden="true">⚡</span>
-            <div>
-              <strong>Acesso imediato</strong>
-              <p>Compra aprovada, acesso liberado.</p>
-            </div>
-          </div>
-
-          <div class="perk">
-            <span class="perk-ico" aria-hidden="true">🔒</span>
-            <div>
-              <strong>Pagamento seguro</strong>
-              <p>Checkout confiável pela Hotmart.</p>
-            </div>
-          </div>
-
-          <div class="perk">
-            <span class="perk-ico" aria-hidden="true">🧾</span>
-            <div>
-              <strong>Entrega rápida</strong>
-              <p>Direto ao ponto, sem excesso de teoria.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- OFERTA / PREÇO -->
-    <section class="section" id="oferta">
-      <div class="container narrow">
-        <h2>Preço e oferta</h2>
-
-        <div class="offer-card">
-          <div class="offer-left">
-            <p class="offer-product">Facilita Fluxo de Caixa</p>
-
-            <p class="offer-price">
-              <span class="price-main">12x de <strong>R$ 10,03</strong> no cartão</span>
-              <span class="price-alt">ou <strong>R$ 97,00</strong> à vista</span>
-            </p>
-
-            <p class="offer-note">Pagamento seguro pela Hotmart</p>
-          </div>
-
-          <div class="offer-right">
-            <a
-              class="btn btn-primary btn-wide"
-              href="https://pay.hotmart.com/T104122762T"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Quero clareza no meu fluxo de caixa
-            </a>
-
-            <p class="micro">
-              Você será direcionado para a página de pagamento.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section faq" id="faq">
-     <div class="container">
-      <h2>Perguntas frequentes</h2>
-  
-      <div class="faq-list">
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <h2>Dúvidas frequentes</h2>
 
       <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Preciso entender de finanças?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer" hidden>
-          <p>Não. O objetivo é simplificar. Você informa dados básicos e recebe uma leitura clara do caixa, com próximos passos práticos.</p>
+        <button class="faq-question">Isso substitui meu contador?</button>
+        <div class="faq-answer">
+          Não. A ferramenta traz clareza para decisão, o contador continua essencial.
         </div>
       </div>
 
       <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Quanto tempo leva para usar?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer" hidden>
-          <p>Em poucos minutos. É um diagnóstico direto, sem planilhas complexas e sem configuração difícil.</p>
+        <button class="faq-question">Preciso entender de finanças?</button>
+        <div class="faq-answer">
+          Não. O diagnóstico foi feito para quem não domina números.
         </div>
       </div>
 
       <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Funciona para qualquer tipo de empresa?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer" hidden>
-          <p>Funciona para pequenos negócios em geral, o diagnóstico foi desenhado para trazer clareza rápida do caixa com informações simples.</p>
+        <button class="faq-question">Quando recebo o acesso?</button>
+        <div class="faq-answer">
+          O acesso é liberado imediatamente após a confirmação do pagamento.
         </div>
       </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Recebo algo prático ou só teoria?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer" hidden>
-          <p>Você recebe um diagnóstico objetivo do caixa e orientações práticas. Além disso, recebe o bônus com uma aula de 1 hora sobre gestão de fluxo de caixa.</p>
-        </div>
-      </div>
-
     </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Facilita Fluxo de Caixa</p>
+    <p>Suporte: contato@toledoalexandre.com.br</p>
+    <p>© Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Sticky CTA Mobile -->
+  <div class="sticky-cta">
+    <a
+      href="https://pay.hotmart.com/T104122762T"
+      target="_blank"
+      class="cta secondary"
+    >
+      Quero acesso por R$ 97
+    </a>
   </div>
-</section>
 
+  <!-- JS -->
+  <script src="./js/script.js"></script>
 
-    <!-- Rodapé simples -->
-    <footer class="footer">
-      <div class="container footer-inner">
-        <p class="micro">
-          © <span id="year"></span> Facilita Fluxo de Caixa. Todos os direitos reservados.
-        </p>
-        <a class="micro" href="#topo" data-scroll>Voltar ao topo</a>
-      </div>
-    </footer>
-  </main>
+  <!-- VTurb -->
+  <script type="text/javascript">
+    var s=document.createElement("script");
+    s.src="https://scripts.converteai.net/7a2f2c75-9a37-4ad8-b060-7171f7f0bf22/players/698266a69a64dd1a27bd3829/v4/player.js";
+    s.async=!0;
+    document.head.appendChild(s);
+  </script>
 
-  <script src="js/script.js"></script>
 </body>
 </html>
