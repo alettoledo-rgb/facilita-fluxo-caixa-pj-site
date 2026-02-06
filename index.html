@@ -5,194 +5,326 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Facilita Fluxo de Caixa</title>
 
-  <meta name="description" content="Saiba em minutos se o caixa do seu negócio está saudável ou em risco. Clareza imediata, sem planilhas complicadas." />
+  <meta name="description" content="Descubra em 5 minutos se o seu negócio aguenta o mês, sem planilhas complicadas. Diagnóstico simples: Verde, Amarelo ou Vermelho." />
 
-  <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css">
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1412141350446035');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1412141350446035&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
 </head>
 
 <body>
-
-  <!-- HERO -->
-  <section class="hero" id="topo">
-    <div class="container">
-
-      <h1>Saiba em minutos se o caixa do seu negócio está saudável ou em risco</h1>
-
-      <p class="subtitle">
-        Clareza imediata para MEIs e microempresários decidirem com segurança,
-        sem planilhas complicadas.
-      </p>
-
-      <!-- VSL -->
-      <div class="video-wrapper">
-        <vturb-smartplayer
-          id="vid-6983790d3e5eace044fa9f00"
-          style="display:block;margin:0 auto;width:100%;">
-        </vturb-smartplayer>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <span class="brand-title">Facilita Fluxo de Caixa</span>
+        <span class="brand-sub">Clareza imediata sobre o dinheiro do seu negócio </span>
       </div>
-
-      <!-- CTA -->
-      <button class="cta primary" data-scroll="#oferta">
-        Quero entender meu caixa agora
-      </button>
-
-      <span class="microcopy">
-        Acesso imediato • Pagamento seguro
-      </span>
-
+   
     </div>
-  </section>
+  </header>
 
-  <!-- BLOCO DE TENSÃO -->
-  <section class="tension">
-    <div class="container">
-      <p>O dinheiro entra.</p>
-      <p>Mas você nunca sabe se vai dar até o fim do mês.</p>
-      <p class="highlight">Isso não é normal. É falta de clareza.</p>
-    </div>
-  </section>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="topo">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Pare de decidir no escuro sobre o dinheiro do seu negócio.</h1>
 
-  <!-- MECANISMO -->
-  <section class="mechanism">
-    <div class="container">
-      <h2>Como funciona na prática</h2>
-      <p class="mechanism-sub">Leitura prática de caixa</p>
+          <p class="subheadline">
+            Em poucos minutos, descubra se o caixa está saudável, em atenção ou em risco, sem planilhas complicadas e sem precisar entender finanças:
+            <strong class="tag tag-ok">Verde</strong> (ok),
+            <strong class="tag tag-warn">Amarelo</strong> (atenção) ou
+            <strong class="tag tag-risk">Vermelho</strong> (risco).
+          </p>
 
-      <div class="cards">
-        <div class="card">Poucos dados</div>
-        <div class="card">Resultado imediato: saudável, atenção ou risco</div>
-        <div class="card">Sem precisar entender finanças</div>
+          <div class="hero-proof">
+            <span class="pill">Leitura rápida</span>
+            <span class="pill">Sem mensalidade</span>
+            <span class="pill">Acesso imediato</span>
+          </div>
+        </div>
+
+        <div class="hero-video">
+          <div class="video-card">
+            <vturb-smartplayer id="vid-6985f96c057b3c98dcee81d0" style="display:block;margin:0 auto;width:100%;"></vturb-smartplayer>
+          </div>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-wide" href="#oferta" data-scroll data-cta>
+              Quero entender meu caixa agora
+            </a>
+            <p class="micro">
+              Acesso imediato • Sem mensalidade • Garantia de 7 dias
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- O QUE VOCÊ RECEBE -->
-  <section class="deliverables">
-    <div class="container">
-      <h2>O que você recebe</h2>
-
-      <div class="cards">
-        <div class="card">Ferramenta digital Facilita Fluxo de Caixa</div>
-        <div class="card">Leitura clara do caixa em minutos</div>
-        <div class="card">Aula prática de gestão de caixa</div>
+    <!-- BLOCO DE TENSÃO -->
+    <section class="tension reveal">
+      <div class="container tension-box">
+        <p class="t1">O dinheiro entra.</p>
+        <p class="t2">Mas você nunca sabe se vai dar até o fim do mês.</p>
+        <p class="t3">Isso não é normal. É falta de clareza.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- REDUÇÃO DE ESFORÇO -->
-  <section class="effort">
-    <div class="container">
-      <p>Você não precisa ser bom com números.</p>
-      <p>Não precisa alimentar todo dia.</p>
-      <p>Não substitui seu contador.</p>
-      <p class="highlight">É clareza para decidir melhor.</p>
-    </div>
-  </section>
+    <!-- COMO FUNCIONA -->
+    <section class="section reveal" id="como-funciona">
+      <div class="container">
+        <div class="section-head">
+          <h2>Como funciona</h2>
+          <p class="section-sub">Três passos, simples e visuais.</p>
+        </div>
 
-  <!-- OFERTA -->
-  <section class="offer" id="oferta">
-    <div class="container offer-box">
-      <h2>Acesso completo por R$ 97</h2>
-      <p>Ferramenta + aula prática</p>
-      <p>Acesso imediato após confirmação</p>
+        <div class="steps">
+          <div class="step card">
+            <div class="step-n">1</div>
+            <div class="step-t">
+              <strong>Preencha 4 números do seu mês</strong>
+              <p>(faturamento, custos, retiradas e dívidas)</p>
+            </div>
+          </div>
 
-      <a
-        class="cta primary"
-        href="https://pay.hotmart.com/T104122762T"
-        target="_blank"
-        rel="noopener"
-      >
-        Quero acesso imediato
+          <div class="step card">
+            <div class="step-n">2</div>
+            <div class="step-t">
+              <strong>A ferramenta calcula automaticamente</strong>
+              <p>sua folga ou risco de caixa</p>
+            </div>
+          </div>
+
+          <div class="step card">
+            <div class="step-n">3</div>
+            <div class="step-t">
+              <strong>Você recebe clareza </strong>
+              <p>Verde, Amarelo ou Vermelho, com orientação</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="states card states-card">
+          <div class="state">
+            <span class="dot dot-ok" aria-hidden="true"></span>
+            <div>
+              <strong>Verde</strong>
+              <p>O caixa está saudável.</p>
+            </div>
+          </div>
+
+          <div class="state">
+            <span class="dot dot-warn" aria-hidden="true"></span>
+            <div>
+              <strong>Amarelo</strong>
+              <p>Atenção, ajuste antes de apertar.</p>
+            </div>
+          </div>
+
+          <div class="state">
+            <span class="dot dot-risk" aria-hidden="true"></span>
+            <div>
+              <strong>Vermelho</strong>
+              <p>Risco real, você precisa agir com prioridade.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="center">
+          <a class="btn btn-primary" href="#oferta" data-scroll data-cta>
+            Quero entender meu caixa agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE VOCÊ RECEBE -->
+    <section class="section alt reveal" id="recebe">
+      <div class="container">
+        <div class="section-head">
+          <h2>O que você recebe</h2>
+          <p class="section-sub">Focado em clareza e decisão, sem complicação.</p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <strong>Clareza rápida do caixa</strong>
+            <p>Você entende o cenário do mês sem ficar no escuro.</p>
+          </div>
+          <div class="card">
+            <strong>Alerta simples</strong>
+            <p>Vai faltar ou sobrar dinheiro, com leitura direta.</p>
+          </div>
+          <div class="card">
+            <strong>Aula curta para interpretar</strong>
+            <p>Você aprende a tomar decisões melhores com base no resultado.</p>
+          </div>
+          <div class="card">
+            <strong>Modelo reutilizável</strong>
+            <p>Não precisa preencher todo dia, use quando precisar de clareza.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRA QUEM É / PRA QUEM NÃO É -->
+    <section class="section reveal" id="para-quem">
+      <div class="container">
+        <div class="section-head">
+          <h2>É para você ou não?</h2>
+          <p class="section-sub">Clareza rápida, sem prometer o que não é.</p>
+        </div>
+
+        <div class="two-cols">
+          <div class="card">
+            <h3> É para você se</h3>
+            <ul class="list">
+              <li>O dinheiro entra. A segurança nunca</li>
+              <li>Você já tentou planilha e desistiu</li>
+              <li>Você quer decidir retiradas sem medo de quebrar o caixa</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3> Não é para você se</h3>
+            <ul class="list">
+              <li>Você quer uma contabilidade completa</li>
+              <li>Você precisa de relatórios técnicos ou DRE detalhado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GARANTIA -->
+    <section class="section alt reveal" id="garantia">
+      <div class="container">
+        <div class="guarantee card">
+          <div class="guarantee-badge">7 dias</div>
+          <div class="guarantee-text">
+            <h2>Garantia de 7 dias</h2>
+            <p>
+              Se não trouxer clareza real sobre seu caixa, devolvemos 100% do valor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFERTA -->
+    <section class="section reveal" id="oferta">
+      <div class="container">
+        <div class="offer card">
+          <div class="offer-left">
+            <p class="offer-name">Facilita Fluxo de Caixa</p>
+
+            <div class="offer-price">
+              <div class="price-line">
+                <span>12x de</span>
+                <strong>R$ 10,03</strong>
+                <span>no cartão</span>
+              </div>
+              <div class="price-line muted">
+                <span>ou</span>
+                <strong>R$ 97,00</strong>
+                <span>à vista</span>
+              </div>
+            </div>
+
+            <p class="micro">Pagamento seguro pela Hotmart • Acesso imediato</p>
+          </div>
+
+          <div class="offer-right">
+            <a class="btn btn-primary btn-wide" href="https://pay.hotmart.com/T104122762T" target="_blank" rel="noopener" data-cta>
+              Quero acesso agora
+            </a>
+            <p class="micro">Sem mensalidade • Garantia de 7 dias</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ enxuto -->
+    <section class="section alt reveal" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>Dúvidas frequentes</h2>
+          <p class="section-sub">Respostas rápidas, do jeito que a ferramenta é.</p>
+        </div>
+
+        <div class="accordion" data-accordion>
+          <div class="acc-item">
+            <button class="acc-q" type="button" aria-expanded="false">
+              Isso substitui meu contador?
+              <span class="acc-ico" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-a" hidden>
+              <p>Não. Isso é clareza para decidir melhor. Seu contador continua essencial.</p>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-q" type="button" aria-expanded="false">
+              Preciso entender de finanças?
+              <span class="acc-ico" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-a" hidden>
+              <p>Não. Você informa poucos números e recebe uma leitura simples.</p>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-q" type="button" aria-expanded="false">
+              Quando recebo o acesso?
+              <span class="acc-ico" aria-hidden="true">+</span>
+            </button>
+            <div class="acc-a" hidden>
+              <p>Imediatamente após a confirmação do pagamento na Hotmart.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="center">
+          <a class="btn btn-primary" href="https://pay.hotmart.com/T104122762T" target="_blank" rel="noopener" data-cta>
+            Quero acesso agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>Facilita Fluxo de Caixa</strong>
+          <p class="micro">Site: alettoledo-rgb.github.io</p>
+        </div>
+        <div class="footer-right">
+          <p class="micro">Suporte: suporte@seudominio.com</p>
+          <p class="micro">© <span id="year"></span> Direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sticky CTA mobile -->
+    <div class="sticky" id="stickyCta" aria-hidden="true">
+      <a class="btn btn-primary btn-wide" href="https://pay.hotmart.com/T104122762T" target="_blank" rel="noopener" data-cta>
+        Quero acesso por R$ 97
       </a>
-
-      <span class="microcopy">
-        Compra segura • Sem mensalidade
-      </span>
     </div>
-  </section>
 
-  <!-- FAQ -->
-  <section class="faq">
-    <div class="container">
-      <h2>Dúvidas frequentes</h2>
+  </main>
 
-      <div class="faq-item">
-        <button class="faq-question">Isso substitui meu contador?</button>
-        <div class="faq-answer">
-          Não. A ferramenta traz clareza para decisão, o contador continua essencial.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">Preciso entender de finanças?</button>
-        <div class="faq-answer">
-          Não. O diagnóstico foi feito para quem não domina números.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">Quando recebo o acesso?</button>
-        <div class="faq-answer">
-          O acesso é liberado imediatamente após a confirmação do pagamento.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>Facilita Fluxo de Caixa</p>
-    <p>Suporte: contato@toledoalexandre.com.br</p>
-    <p>© Todos os direitos reservados</p>
-  </footer>
-
-  <!-- Sticky CTA Mobile -->
-  <div class="sticky-cta">
-    <a
-      href="https://pay.hotmart.com/T104122762T"
-      target="_blank"
-      class="cta secondary"
-    >
-      Quero acesso por R$ 97
-    </a>
-  </div>
-
-  <!-- JS -->
   <script src="./js/script.js"></script>
 
-  <!-- VTurb -->
+  <!-- VTurb: novo player -->
   <script type="text/javascript">
     var s=document.createElement("script");
-    s.src="https://scripts.converteai.net/7a2f2c75-9a37-4ad8-b060-7171f7f0bf22/players/6983790d3e5eace044fa9f00/v4/player.js";
-    
+    s.src="https://scripts.converteai.net/7a2f2c75-9a37-4ad8-b060-7171f7f0bf22/players/6985f96c057b3c98dcee81d0/v4/player.js";
     s.async=!0;
-    document.head.appendChild(s); 
+    document.head.appendChild(s);
   </script>
-    
 </body>
 </html>
